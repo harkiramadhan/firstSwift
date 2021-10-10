@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -14,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print("1. didFinishLaunchingWithOptions")
         return true
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        print("2. applicationWillEnterForeground")
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("3. applicationDidBecomeActive")
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("4. applicationWillResignActive")
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("5. applicationDidEnterBackground")
     }
 
     // MARK: UISceneSession Lifecycle
