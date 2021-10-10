@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="ViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,7 @@
         <!--Navigation Controller-->
         <scene sceneID="GVH-MZ-lzJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Npu-uu-DGW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="rootLogin" automaticallyAdjustsScrollViewInsets="NO" id="Npu-uu-DGW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qIC-ZE-ThF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

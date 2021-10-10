@@ -45,6 +45,8 @@ class ViewController: UIViewController {
     
     func login(){
         print("Login Berhasil")
+        view.endEditing(true)
+        navigateToHome()
     }
     
     func validate() -> (isValid: Bool, message: String){
@@ -60,3 +62,12 @@ class ViewController: UIViewController {
     }
 }
 
+extension UIViewController {
+    func navigateToLogin() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "rootLogin")
+        
+        let window = UIApplication.shared.windows.first
+        window?.rootViewController = viewController
+    }
+}
